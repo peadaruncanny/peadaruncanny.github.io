@@ -1,0 +1,37 @@
+body {
+    background-image: url("resources/IMG_3011.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+.generalText {
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(190, 87, 41, 1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: -6px;
+}
+
+.bulletPoints {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: ease-in 0.2s;
+}
+
+.hoverLink:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
+}

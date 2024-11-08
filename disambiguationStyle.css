@@ -1,0 +1,105 @@
+/* General CSS attributes for the page */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: rgba(190, 87, 41, 1);
+}
+
+/* Header nav bar for all pages */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98vw;
+    background-color: rgba(190, 87, 41, 0.5);
+}
+
+header a {
+    color:rgba(190, 87, 41, 1);
+    transition: ease-in 0.2s;
+
+}
+
+.hoverLink:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
+}
+
+/* "Works" page title */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+/* Work Disambiguation Squares */
+
+#workDisambiguation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100vw;
+    height: 65vh;
+}
+
+#workDisambiguation a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 1);
+}
+
+.workSquare {
+
+    width: 280px;
+    height: 280px;
+
+    position: relative;
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 1); /* unhovered solid border */
+
+    display: grid;
+    place-items: center; /* Make inside text centered */
+
+    opacity: 0.65;
+    transition: ease-in 0.2s;
+
+}
+
+.workSquare:hover::after {
+
+    content: "";
+    position: absolute;
+    top: -2.5px; /* These dimensions need to be the negative of the border size */
+    left: -2.5px;
+    right: -2.5px;
+    bottom: -2.5px;
+    border: 2.5px solid rgba(255, 255, 255, 0.5); /* Beggining rgba */
+    z-index: 2;
+    animation: pulse-brightness 0.5s infinite ease-in-out; /* How fast the pulses are */
+}
+
+@keyframes pulse-brightness {
+    0%, 100% {
+      border-color: rgba(255, 255, 255, 1); /* Beggining rgba */
+    }
+    50% {
+      border-color: rgba(0, 72, 0, 1); /* End rgba */
+    }
+  }
+
+
+.workSquare:hover {
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
