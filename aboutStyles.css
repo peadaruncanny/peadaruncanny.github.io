@@ -1,12 +1,25 @@
+/* General CSS attributes for the page */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("resources/IMG_3011.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+    overflow: hidden;
+}
+
 /* Header nav bar for all pages */
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    width: 100.1vw;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: -20px; /* Adjust for body margin */
+    margin-left: -9px; /* Adjust for body margin */
 
 }
 
@@ -23,10 +36,8 @@ header a {
 
 /* Bio text */
 
-body {
-    background-image: url("resources/IMG_3011.jpg");
-    background-size: cover;
-    background-position: 0px -100px;
+main {
+
     width: 55%;
     text-align: justify;
 
@@ -51,7 +62,6 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
     transition: ease-in 0.2s;
 }

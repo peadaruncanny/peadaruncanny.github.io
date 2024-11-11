@@ -4,14 +4,20 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
 /* Header nav bar for all pages */
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 98vw;
+    width: 100.1vw;
     background-color: rgba(190, 87, 41, 0.5);
+    margin-left: -9px;
 }
 
 header a {
@@ -27,8 +33,7 @@ header a {
 
 /* "Works" page title */
 
-body {
-    background-color: black;
+main {
     color: rgba(190, 87, 41, 1);
 
     display: grid;
@@ -66,7 +71,7 @@ h1 {
     position: relative;
     text-align: center;
 
-    border: 1px solid rgba(255, 255, 255, 1); /* unhovered solid border */
+    border: 2.5px solid rgba(255, 255, 255, 1); /* unhovered solid border */
 
     display: grid;
     place-items: center; /* Make inside text centered */
@@ -116,7 +121,7 @@ h1 {
 /* Define pictures for each work square */
 
 .workSquare.square13 {
-    background-image: url();
+    background-image: url(resources/thebanshee.jpg);
     background-position: -100%;
     background-size: cover;
 }
