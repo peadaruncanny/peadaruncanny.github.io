@@ -1,3 +1,7 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* General CSS attributes for the page */
 
 a {
@@ -6,9 +10,10 @@ a {
 
 body {
     background-image: url("resources/IMG_3011.jpg");
-    background-size: cover;
+    background-size:auto;
+    background-repeat: no-repeat;
     background-position: 0px -100px;
-    overflow: hidden;
+    background-attachment: fixed;
 }
 
 /* Header nav bar for all pages */
@@ -40,12 +45,13 @@ main {
 
     width: 55%;
     text-align: justify;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
 
     margin-left: 20px;
 
     color: rgba(190, 87, 41, 1);
 
-    font-family: sand;
 }
 
 p {
