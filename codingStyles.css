@@ -22,7 +22,6 @@ header {
     width: 100.1vw;
     background-color: rgba(190, 87, 41, 0.5);
     margin-left: -9px;
-    font-family: 'Tinos';
 }
 
 header a {
@@ -158,8 +157,8 @@ h1 {
 }
 
 .workSquare.square8 {
-    background-image: url(resources/latentspacebodylimbs.png);
-    background-position: 50% 0%;
+    background-image: url(resources/IMG_2883.PNG);
+    background-position: -100%;
     background-size: cover;
 }
 
