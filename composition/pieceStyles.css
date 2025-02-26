@@ -37,11 +37,34 @@ header a {
 /* Piece content */
 
 main {
+
+    display: flex;
+    flex-direction: row;
+    /* border: 1px red solid; */
     color: rgba(190, 87, 41, 1);
-    max-width: 50%;
-    min-height: 94vh;
     font-family: 'Tinos';
+
+}
+
+.videoAudioDoc {
+
+    margin-left: 5rem;
+    margin-top: 8.77rem;
+
+}
+
+iframe {
+
+    border: 0.5rem rgba(0, 0, 0, 0.65) solid;
+
+}
+
+.allInfo {
+
+    min-height: 94vh;
+    max-width: 50%;
     margin-left: 1rem;
+
 }
 
 .pieceInfo {

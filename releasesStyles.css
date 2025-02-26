@@ -1,0 +1,36 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* General CSS attributes for the page */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* Header nav bar for all pages */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100.1vw;
+    background-color: rgba(190, 87, 41, 0.5);
+    margin-left: -9px;
+}
+
+header a {
+    color:rgba(190, 87, 41, 1);
+    transition: ease-in 0.2s;
+
+}
+
+.hoverLink:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
+}

@@ -11,6 +11,12 @@ a {
 body {
     background-color: black;
     overflow-x: hidden;
+
+    background-image: url("resources/IMG_3011.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /* Header nav bar for all pages */
@@ -20,7 +26,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 100.1vw;
-    background-color: rgba(190, 87, 41, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: -9px;
     font-family: 'Tinos';
 }
@@ -84,6 +90,7 @@ h1 {
     place-items: center; /* Make inside text centered */
 
     opacity: 0.65;
+
     transition: ease-in 0.2s;
 
 }
@@ -135,12 +142,14 @@ h1 {
 
 .workSquare.square12 {
     background-image: url();
+    background-color: black;
     background-position: -100%;
     background-size: cover;
 }
 
 .workSquare.square11 {
     background-image: url();
+    background-color: black;
     background-position: -100%;
     background-size: cover;
 }
@@ -188,7 +197,7 @@ h1 {
 
 .workSquare.square3 {
     background-image: url(/resources/peoplearenotnumbersmemorial.png);
-
+    background-color: black;
     background-position: 0px 140px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -202,6 +211,7 @@ h1 {
 
 .workSquare.square1 {
     background-image: url();
+    background-color: black;
     background-position: -100%;
     background-size: cover;
 }
