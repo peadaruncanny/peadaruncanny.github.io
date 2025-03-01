@@ -22,6 +22,7 @@ header {
     width: 100.1vw;
     background-color: rgba(190, 87, 41, 0.5);
     margin-left: -9px;
+    font-family: 'Tinos';
 }
 
 header a {
@@ -33,4 +34,30 @@ header a {
 .hoverLink:hover {
     color: rgba(190, 87, 41, 0.5);
     transition: ease-in 0.2s;
+}
+
+.year {
+
+    font-family: 'Tinos';
+    color: rgba(190, 87, 41, 1);
+    font-size: 1.7rem;
+    text-align: center;
+
+}
+
+.concert {
+
+    font-family: 'Tinos';
+    color: rgba(190, 87, 41, 1);
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 3rem;
+
+}
+
+.concert a {
+
+    color: rgba(190, 87, 41, 1);
+    font-weight: bold;
+
 }
