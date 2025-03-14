@@ -71,7 +71,7 @@ header a {
 
 .concert a {
 
-    color: rgba(190, 87, 41, 1);
+    color: rgb(184, 121, 92);
     font-weight: bold;
 
 }
@@ -79,11 +79,5 @@ header a {
 i {
 
     color: rgb(195, 184, 179);
-
-}
-
-.concert a {
-
-    color: rgb(184, 121, 92);
 
 }

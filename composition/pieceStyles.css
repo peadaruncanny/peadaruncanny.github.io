@@ -21,6 +21,7 @@ header {
     width: 100.1vw;
     background-color: rgba(190, 87, 41, 0.5);
     margin-left: -9px; /* Adjust for body margin */
+    font-family: 'Tinos';
 }
 
 header a {
