@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed First Box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            min-height: 300px;
+            min-width: 300px;
+
+
+            position: relative;
+            text-align: center;
+
+            border: 2.5px solid rgba(255, 255, 255, 1); /* unhovered solid border */
+
+            display: grid;
+            place-items: center; /* Make inside text centered */
+        }
+
+        /* First box has a fixed width */
+        .box:first-child {
+            /* width: 150px; Fixed width */
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        /* Other two boxes take up remaining space */
+        .box:nth-child(2),
+        .box:nth-child(3) {
+            flex: 1; /* Flexible size */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="box">Fixed</div>
+        <div class="box">Flexible 1</div>
+        <div class="box">Flexible 2</div>
+    </div>
+
+    <div class="row">
+        <div class="box">Fixed</div>
+        <div class="box">Flexible 3</div>
+        <div class="box">Flexible 4</div>
+    </div>
+
+    <div class="row">
+        <div class="box">Fixed</div>
+        <div class="box">Flexible 5</div>
+        <div class="box">Flexible 6</div>
+    </div>
+
+</body>
+</html>

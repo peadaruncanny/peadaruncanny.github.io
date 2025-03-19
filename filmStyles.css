@@ -6,11 +6,25 @@
 
 a {
     text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
 }
 
 body {
-    background-color: black;
-    overflow-x: hidden;
+    background-image: url("resources/IMG_3011.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+main a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }
 
 /* Header nav bar for all pages */
@@ -20,32 +34,22 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 100.1vw;
-    background-color: rgba(190, 87, 41, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: -9px;
+    font-family: 'Tinos';
 }
 
 header a {
     color:rgba(190, 87, 41, 1);
-    transition: ease-in 0.2s;
-
 }
 
-.hoverLink:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
-}
+/* Actual content of the page */
 
 /* "Works" page title */
 
 main {
     color: rgba(190, 87, 41, 1);
-
-    display: grid;
-    place-items: center;
-}
-
-h1 {
-    margin-top: 80px;
+    font-family: "Tinos";
 }
 
 /* Work Squares */
@@ -53,26 +57,33 @@ h1 {
 #workList {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+
+    gap: 5rem;
+
     max-width: 100vw;
-    font-family: 'Tinos';
     font-size: 1.2rem;
 
     margin-top: 20px;
+    margin-left: 1rem;
 }
 
-#workList a {
+.film {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.film a {
     text-decoration: none;
-    color: rgb(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
 }
 
-.workSquare {
+.filmSquare {
+    min-height: 300px;
+    min-width: 300px;
 
-    width: 350px;
-    height: 350px;
 
     position: relative;
     text-align: center;
@@ -85,9 +96,44 @@ h1 {
     opacity: 0.65;
     transition: ease-in 0.2s;
 
+    font-family: "Playfair Display";
+
+    flex-shrink: 0;
 }
 
-.workSquare:hover::after {
+.filmCredits {
+    font-size: 1rem;
+    flex-shrink: 0;
+    width: 33%;
+}
+
+.filmCredits a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
+}
+
+.filmDescription {
+    font-size: 1rem;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    text-indent: 45px;
+}
+
+.filmDescription a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
+}
+
+.filmDescription a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
+}
+
+/* Pulsing border */
+
+.filmSquare:hover::after {
 
     content: "";
     position: absolute;
@@ -110,97 +156,31 @@ h1 {
   }
 
 
-.workSquare:hover {
+.filmSquare:hover {
     opacity: 1;
     transition: ease-in 0.2s;
 }
 
-
-
-
-
-
-
-
-
-
 /* Define pictures for each work square */
 
-.workSquare.square13 {
-    background-image: url(resources/thebanshee.jpg);
-    background-position: -100%;
+.filmSquare.ursula {
+    background-image: url(/resources/ursula.png);
     background-size: cover;
 }
 
-.workSquare.square12 {
-    background-image: url();
-    background-position: -100%;
+.filmSquare.rowanVessels {
+    background-image: url(/resources/Vessels-of-Home_Stills_Rowan-Moonlion-07.jpg);
     background-size: cover;
 }
 
-.workSquare.square11 {
-    background-image: url();
-    background-position: -100%;
+.filmSquare.rowanQueer {
+
+    background-image: url(/resources/Queer-Utopia_NMoonlion-59.jpg);
     background-size: cover;
 }
 
-.workSquare.square10 {
-    background-image: url(resources/mariokart1000000.png);
-    background-position: -55px;
-    background-size: cover;
-}
+.filmSquare.queerpera {
 
-.workSquare.square9 {
-    background-image: url(resources/theotherday.jpg);
-    background-position: -71.5% 35%;
-    background-size: 500%;
-}
-
-.workSquare.square8 {
-    background-image: url(resources/IMG_2883.PNG);
-    background-position: -100%;
-    background-size: cover;
-}
-
-.workSquare.square7 {
-    background-image: url(resources/Dimitris.png);
-    background-position: -100px 0px;
-    background-size: cover;
-}
-
-.workSquare.square6 {
-    background-image: url(resources/canwefeeltouch.jpg);
-    background-position: -30px 0px;
-    background-size: cover;
-}
-
-.workSquare.square5 {
-    background-image: url(resources/beingwithyouinunity.png);
-    background-position: -230px 0px;
-    background-size: cover;
-}
-
-.workSquare.square4 {
-    background-image: url(/resources/oschaparroscresceneasazinheirasmingam.jpg);
-    background-size: cover;
-}
-
-.workSquare.square3 {
-    background-image: url(/resources/peoplearenotnumbersmemorial.png);
-
-    background-position: 0px 140px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.workSquare.square2 {
-    background-image: url(resources/twitchplaysmax.png);
-    background-position: -170px 0px;
-    background-size: cover;
-}
-
-.workSquare.square1 {
-    background-image: url();
-    background-position: -100%;
+    background-image: url(/resources/);
     background-size: cover;
 }

@@ -6,11 +6,30 @@
 
 a {
     text-decoration: none;
+    transition: ease-in 0.2s;
 }
 
-/* html {
-    overflow: hidden;
-} */
+a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+
+    /*if background photo
+    background-image: url("resources/IMG_3011.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;*/
+}
+
+main a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
+}
 
 /* Header nav bar for all pages */
 
@@ -20,19 +39,12 @@ header {
     justify-content: space-around;
     width: 100.1vw;
     background-color: rgba(190, 87, 41, 0.5);
-    margin-left: -9px; /* Adjust for body margin */
+    margin-left: -9px;
     font-family: 'Tinos';
 }
 
 header a {
     color:rgba(190, 87, 41, 1);
-    transition: ease-in 0.2s;
-
-}
-
-.hoverLink:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }
 
 /* Piece content */
@@ -100,16 +112,4 @@ main p {
     text-indent: 40px;
     text-align: justify;
 
-}
-
-p a {
-    text-decoration: none;
-    color: rgba(190, 87, 41, 1);
-    font-weight: bold;
-    transition: ease-in 0.2s;
-}
-
-p a:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }

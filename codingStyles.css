@@ -6,17 +6,25 @@
 
 a {
     text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
 }
 
 body {
-    background-color: black;
-    overflow-x: hidden;
-
     background-image: url("resources/IMG_3011.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 100% 100%;
     background-repeat: no-repeat;
+}
+
+main a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }
 
 /* Header nav bar for all pages */
@@ -28,24 +36,14 @@ header {
     width: 100.1vw;
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: -9px;
-    font-family: "Tinos";
+    font-family: 'Tinos';
 }
 
 header a {
     color:rgba(190, 87, 41, 1);
-    transition: ease-in 0.2s;
-
 }
 
-.hoverLink:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
-}
-
-
-
-
-
+/* Actual content of the page */
 
 main {
     color: rgba(190, 87, 41, 1);
@@ -64,11 +62,6 @@ main {
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
-}
-
-.project a {
-    color: rgb(184, 121, 92);
-    font-weight: bold;
 }
 
 .what {

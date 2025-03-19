@@ -6,11 +6,22 @@
 
 a {
     text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
 }
 
 body {
     background-color: black;
     overflow-x: hidden;
+}
+
+main a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }
 
 /* Header nav bar for all pages */
@@ -27,14 +38,9 @@ header {
 
 header a {
     color:rgba(190, 87, 41, 1);
-    transition: ease-in 0.2s;
-
 }
 
-.hoverLink:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
-}
+/* Actual content of the page */
 
 .soon {
     color: rgba(190, 87, 41, 1);
@@ -42,34 +48,21 @@ header a {
 }
 
 .title {
-
     font-family: 'Tinos';
     color: rgba(190, 87, 41, 1);
     font-size: 1.7rem;
     text-align: center;
     background-color: rgba(190, 88, 41, 0.315);
-
 }
 
 .entry {
-
     font-family: 'Tinos';
     color: rgba(190, 87, 41, 1);
     font-size: 1rem;
     text-align: left;
     margin-left: 1rem;
-
-}
-
-.entry a {
-
-    color: rgb(184, 121, 92);
-    font-weight: bold;
-
 }
 
 i {
-
     color: rgb(195, 184, 179);
-
 }

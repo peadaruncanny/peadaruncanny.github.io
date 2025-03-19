@@ -6,11 +6,22 @@
 
 a {
     text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+a:hover {
+    color: rgba(190, 87, 41, 0.5);
+    transition: ease-in 0.2s;
 }
 
 body {
     background-color: black;
     overflow-x: hidden;
+}
+
+main a {
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }
 
 /* Header nav bar for all pages */
@@ -27,17 +38,11 @@ header {
 
 header a {
     color:rgba(190, 87, 41, 1);
-    transition: ease-in 0.2s;
-
 }
 
-.hoverLink:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
-}
+/* Actual content of the page */
 
 .past {
-
     margin: 0%; 
     margin-bottom: 0.5rem;
     font-family: 'Tinos';
@@ -46,38 +51,24 @@ header a {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 5rem;
-
 }
 
 .year {
-
     font-family: 'Tinos';
     color: rgba(190, 87, 41, 1);
     font-size: 1.7rem;
     text-align: center;
     background-color: rgba(190, 88, 41, 0.315);
-
 }
 
 .concert {
-
     font-family: 'Tinos';
     color: rgba(190, 87, 41, 1);
     font-size: 1rem;
     text-align: left;
     margin-left: 1rem;
-
-}
-
-.concert a {
-
-    color: rgb(184, 121, 92);
-    font-weight: bold;
-
 }
 
 i {
-
     color: rgb(195, 184, 179);
-
 }

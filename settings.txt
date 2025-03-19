@@ -1,3 +1,5 @@
+Beginner settigns and nav bar for all pages
+
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -15,11 +17,15 @@ a:hover {
 }
 
 body {
+    background-color: black;
+    overflow-x: hidden;
+
+    /*if background photo
     background-image: url("resources/IMG_3011.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 main a {
@@ -34,7 +40,8 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 100.1vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(190, 87, 41, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
     margin-left: -9px;
     font-family: 'Tinos';
 }
@@ -45,55 +52,30 @@ header a {
 
 /* Actual content of the page */
 
-/* "Works" page title */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
+<p> as text settings:
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 1em;
+    color: rgba(190, 87, 41, 1);
+    /*background-color: rgba(0, 0, 0, 0.65);*/ If it needs background square
+
+titles font: 
+    font-family: 'Playfair Display';
+
+normal text font:
     font-family: 'Tinos';
-    font-size: 1.3rem;
-}
 
-/* Work Disambiguation Squares */
 
-#workDisambiguation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 100vw;
-    height: 65vh;
-}
 
-#workDisambiguation a {
-    color: rgb(255, 255, 255, 1);
-    font-weight: normal;
-}
 
-.workSquare {
-    width: 280px;
-    height: 280px;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    position: relative;
-    text-align: center;
+Pulsing square border
 
-    border: 1px solid rgba(255, 255, 255, 1); /* unhovered solid border */
+.filmSquare:hover::after {
 
-    display: grid;
-    place-items: center; /* Make inside text centered */
-
-    opacity: 0.65;
-    transition: ease-in 0.2s;
-
-    background-color: black;
-}
-
-.workSquare:hover::after {
     content: "";
     position: absolute;
     top: -2.5px; /* These dimensions need to be the negative of the border size */
@@ -114,7 +96,24 @@ main {
     }
   }
 
-.workSquare:hover {
+.filmSquare:hover {
     opacity: 1;
     transition: ease-in 0.2s;
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Latas: composer, performer, creative coder</title>
+    <link rel="stylesheet" href=".css">
+    <link rel="icon" href="resources/favicon.ico">
+</head>
+
+<header>
+    <div><a href="about">About</a></div>
+    <div><a href="disambiguation">Portfolio</a></div>
+    <div><a href="agenda">Agenda</a></div>
+    <div><a href="releases">Releases</a></div>
+</header>
