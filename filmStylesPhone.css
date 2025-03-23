@@ -6,19 +6,13 @@
 
 a {
     text-decoration: none;
-    transition: ease-in 0.2s;
-}
-
-a:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }
 
 body {
     background-image: url("resources/IMG_3011.jpg");
-    background-size: cover;
     background-attachment: fixed;
-    background-position: 100% 100%;
+    background-size: cover;
+    background-position: 85% 100%;
     background-repeat: no-repeat;
 }
 
@@ -65,12 +59,11 @@ main {
     font-size: 1.2rem;
 
     margin-top: 20px;
-    margin-left: 1rem;
 }
 
 .film {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -81,8 +74,8 @@ main {
 }
 
 .filmSquare {
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 170px;
+    min-width: 170px;
 
 
     position: relative;
@@ -94,18 +87,12 @@ main {
     place-items: center; /* Make inside text centered */
 
     opacity: 0.65;
-    transition: ease-in 0.2s;
 
     font-family: "Playfair Display";
-
-    flex-shrink: 0;
 }
 
 .filmCredits {
     font-size: 1rem;
-    flex-shrink: 0;
-    width: 25%;
-    text-align: left;
 }
 
 .filmCredits a {
@@ -114,7 +101,7 @@ main {
 }
 
 .filmDescription {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 0.6rem;
@@ -127,45 +114,21 @@ main {
     font-weight: bold;
 }
 
-.filmDescription a:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
+hr {
+    width: 50%;
 }
 
 .divBar {
-    background-color: rgba(190, 88, 41, 0.);
+    background-color: rgba(190, 88, 41, 0.5);
     color: rgba(190, 88, 41, 0);
+    font-size: 0.5rem;
+    text-align: center;
+    width: 100%;
 }
 
-/* Pulsing border */
-
-.filmSquare:hover::after {
-
-    content: "";
-    position: absolute;
-    top: -2.5px; /* These dimensions need to be the negative of the border size */
-    left: -2.5px;
-    right: -2.5px;
-    bottom: -2.5px;
-    border: 2.5px solid rgba(255, 255, 255, 0.5); /* Beggining rgba */
-    z-index: 2;
-    animation: pulse-brightness 0.5s infinite ease-in-out; /* How fast the pulses are */
-}
-
-@keyframes pulse-brightness {
-    0%, 100% {
-      border-color: rgba(255, 255, 255, 1); /* Beggining rgba */
-    }
-    50% {
-      border-color: rgba(0, 72, 0, 1); /* End rgba */
-    }
-  }
 
 
-.filmSquare:hover {
-    opacity: 1;
-    transition: ease-in 0.2s;
-}
+
 
 /* Define pictures for each work square */
 
@@ -189,44 +152,4 @@ main {
 
     background-image: url(/resources/);
     background-size: cover;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 900px) {
-    #workList {
-        margin-left: 0rem;
-    }
-    .film {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .filmSquare {
-        min-height: 130px;
-    }
-
-    .filmCredits {
-        font-size: 1rem;
-        flex-shrink: 0;
-        width: 100%;
-    }
-
-    hr {
-        width: 50%;
-    }
-
-    .divBar {
-        background-color: rgba(190, 88, 41, 0.5);
-        color: rgba(190, 88, 41, 0);
-        font-size: 0.5rem;
-        text-align: center;
-        width: 100%;
-    }
 }

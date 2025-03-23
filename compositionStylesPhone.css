@@ -6,25 +6,18 @@
 
 a {
     text-decoration: none;
-    transition: ease-in 0.2s;
 }
 
 a:hover {
     color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }
 
 body {
     background-image: url("resources/IMG_3011.jpg");
-    background-size: cover;
     background-attachment: fixed;
-    background-position: 100% 100%;
+    background-size: cover;
+    background-position: 85% 100%;
     background-repeat: no-repeat;
-}
-
-main a {
-    color: rgb(184, 121, 92);
-    font-weight: bold;
 }
 
 /* Header nav bar for all pages */
@@ -53,10 +46,6 @@ main {
     place-items: center;
 }
 
-h1 {
-    margin-top: 80px;
-}
-
 /* Work Squares */
 
 #workList {
@@ -68,7 +57,7 @@ h1 {
     gap: 20px;
     max-width: 100vw;
     font-family: 'Tinos';
-    font-size: 1.2rem;
+    font-size: 0.77rem;
     margin-top: 20px;
 }
 
@@ -80,8 +69,8 @@ h1 {
 }
 
 .workSquare {
-    width: 350px;
-    height: 350px;
+    width: 170px;
+    height: 170px;
 
     position: relative;
     text-align: center;
@@ -91,48 +80,7 @@ h1 {
     display: grid;
     place-items: center; /* Make inside text centered */
 
-    opacity: 0.65;
-
-    transition: ease-in 0.2s;
-}
-
-.workSquare:hover::after {
-    content: "";
-    position: absolute;
-    top: -2.5px; /* These dimensions need to be the negative of the border size */
-    left: -2.5px;
-    right: -2.5px;
-    bottom: -2.5px;
-    border: 2.5px solid rgba(255, 255, 255, 0.5); /* Beggining rgba */
-    z-index: 2;
-    animation: pulse-brightness 0.5s infinite ease-in-out; /* How fast the pulses are */
-}
-
-@keyframes pulse-brightness {
-    0%, 100% {
-      border-color: rgba(255, 255, 255, 1); /* Beggining rgba */
-    }
-    50% {
-      border-color: rgba(0, 72, 0, 1); /* End rgba */
-    }
-  }
-
-.workSquare:hover {
-    opacity: 1;
-    transition: ease-in 0.2s;
-}
-
-@media (max-width: 750px) {
-
-    .workSquare {
-        width: 170px;
-        height: 170px;
-    }
-
-    #workList {
-        font-size: 0.8rem;
-    }
-
+    opacity: 0.8;
 }
 
 /* Define pictures for each work square */

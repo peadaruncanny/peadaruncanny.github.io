@@ -6,12 +6,6 @@
 
 a {
     text-decoration: none;
-    transition: ease-in 0.2s;
-}
-
-a:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }
 
 body {
@@ -45,44 +39,43 @@ header a {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: rgba(190, 87, 41, 1);
     font-family: 'Tinos';
 }
 
 .videoAudioDoc {
-    margin-left: 5rem;
-    margin-top: 8.77rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 iframe {
-
     border: 0.5rem rgba(0, 0, 0, 0.65) solid;
-    width: 560px;
-    height: 315px;
+    width: 93.15vw;
+    height: calc(93.15vw * 0.565); /* width * 0.565 */
+    margin-bottom: 6rem;
 }
 
 .allInfo {
-
-    min-height: 94vh;
-    max-width: 50%;
-    margin-left: 1rem;
-
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .pieceInfo {
     margin-top: 1.5rem;
     background-color: rgba(0, 0, 0, 0.65);
     padding: 0.6rem;
+    text-align: center;
 }
 
 .pieceTitle {
-    font-size: 1.43rem;
+    font-size: 2rem;
     font-family: 'Playfair Display';
 }
 
 .pieceFormation {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .pieceText {
@@ -90,7 +83,7 @@ iframe {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.65);
     padding: 0.6rem;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 hr {
@@ -98,32 +91,6 @@ hr {
 }
 
 main p {
-
     text-indent: 2rem;
     text-align: justify;
-
-}
-
-@media (max-width: 1000px) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .videoAudioDoc {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        margin-left: 0rem;
-    }
-
-    .pieceInfo {
-        text-align: center;
-    }
-
-    .allInfo {
-        min-height: min-content;
-        max-width: 100%;
-        margin-left: 0rem;
-    }
 }

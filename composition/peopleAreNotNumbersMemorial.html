@@ -6,16 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Latas: composer, performer, creative coder</title>
-    <link rel="stylesheet" href="pieceStyles.css">
+
+    <!-- Master CSS -->
+    <link rel="stylesheet" media="screen and (min-width: 481px)" href="pieceStyles.css">
+
+    <!-- Media queries CSS -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="pieceStylesPhone.css">
+
     <link rel="icon" href="resources/favicon.ico">
 
 </head>
 
 <header>
-    <div><a class="hoverLink" href="../about">About</a></div>
-    <div><a class="hoverLink" href="../disambiguation">Portfolio</a></div>
-    <div><a class="hoverLink" href="../agenda">Agenda</a></div>
-    <div><a class="hoverLink" href="../releases">Releases</a></div>
+    <div><a href="../about">About</a></div>
+    <div><a href="../disambiguation">Portfolio</a></div>
+    <div><a href="../agenda">Agenda</a></div>
+    <div><a href="../releases">Releases</a></div>
 </header>
 
 <!-- Add picture specific to the page without changing the pieceStyles.css file -->
@@ -24,7 +30,6 @@
         background-image: url("../resources/peoplearenotnumbersmemorial.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 0% 100%;
         background-attachment: fixed;
     }
 </style>
@@ -54,7 +59,7 @@
     </div>
 
     <div class="videoAudioDoc">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7QkVGGU87o0?si=YRp7TtZVQTIdZsPt" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/7QkVGGU87o0?si=YRp7TtZVQTIdZsPt" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
 </main>

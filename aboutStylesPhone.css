@@ -1,4 +1,4 @@
-/* Desktop VERSION */
+/* PHONE VERSION */
 
 /* Fonts */
 
@@ -8,20 +8,16 @@
 
 a {
     text-decoration: none;
-    transition: ease-in 0.2s;
-}
-
-a:hover {
-    color: rgba(190, 87, 41, 0.5);
-    transition: ease-in 0.2s;
 }
 
 body {
     background-image: url("resources/IMG_3011.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: 85% 100%;
     background-repeat: no-repeat;
+
+    /* background-color: rgb(56, 56, 56); */
 }
 
 /* Header nav bar for all pages */
@@ -45,60 +41,44 @@ header a {
 /* Bio text */
  
 main {
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
-    max-width: 50%;
-    min-width: min-content;
-    min-height: 93vh;
+    text-align: justify;
+    font-family: 'Tinos';
+    font-size: 1.2rem;
 
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     color: rgba(190, 87, 41, 1);
+    padding-left: 16px;
+    padding-right: 16px;
 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 p {
     text-indent: 2rem;
 }
 
-.mainBioText {
-    text-align: justify;
-    font-family: 'Tinos';
-    font-size: 1.1rem;
-}
-
 /* Social links */
 
 .bulletPoints {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    padding-bottom: 5px;
 
 }
 
-.bulletPoints div{
-    background-color: rgba(0, 0, 0, 0.28);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-a {
+.bulletPoints a {
     color: inherit;
-    transition: ease-in 0.2s;
-}
-
-@media (max-width: 700px) {
-
-    main {
-        max-width: 100%;
-        margin-right: 20px;
-
-    }
-
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }

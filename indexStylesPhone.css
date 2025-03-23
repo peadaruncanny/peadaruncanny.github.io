@@ -4,10 +4,11 @@
 
 body {
     background-image: url("resources/IMG_3011.jpg");
-    background-size: cover;
     background-attachment: fixed;
-    background-position: 100% 100%;
+    background-size: cover;
+    background-position: 85% 100%;
     background-repeat: no-repeat;
+
 }
 
 .generalText {
@@ -23,6 +24,7 @@ body {
 h1 {
     font-family: "Playfair Display";
     font-size: 2.6rem;
+    margin: 0px;
 }
 
 h2 {
@@ -31,26 +33,24 @@ h2 {
     font-family: "Playfair Display";
     font-weight: 300;
     font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .bulletPoints {
     display: flex;
-    flex-direction: row;
-    gap: 60px;
-    font-family: 'Tinos';
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 30px;
+
+    font-family: 'Tinos';
+    font-size: 1.2rem;
 }
 
 .bulletPoints div{
-    margin-top: 1rem;
-    background-color: rgba(0, 0, 0, 0.28);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-
+    color: rgb(184, 121, 92);
+    font-weight: bold;
 }
 
 a {
@@ -62,16 +62,4 @@ a {
 .hoverLink:hover {
     color: rgba(190, 87, 41, 0.5);
     transition: ease-in 0.2s;
-}
-
-@media (max-width: 700px) {
-
-    .bulletPoints {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-
 }
