@@ -89,7 +89,7 @@ main {
     display: grid;
     place-items: center; /* Make inside text centered */
 
-    opacity: 0.65;
+    opacity: 0.8;
 
     font-family: "Playfair Display";
 }
