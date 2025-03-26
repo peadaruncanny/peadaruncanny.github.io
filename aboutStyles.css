@@ -93,7 +93,7 @@ a {
     transition: ease-in 0.2s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
 
     main {
         max-width: 100%;
