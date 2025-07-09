@@ -85,14 +85,13 @@ main {
 /* Define pictures for each work square */
 
 .workSquare.square13 {
-    background-image: url(resources/thebanshee.jpg);
-    background-position: -100%;
+    background-image: url(resources/lsbthroat.jpg);
+    background-position: 65%;
     background-size: cover;
 }
 
 .workSquare.square12 {
-    background-image: url();
-    background-color: black;
+    background-image: url(resources/thebanshee.jpg);
     background-position: -100%;
     background-size: cover;
 }
