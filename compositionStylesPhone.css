@@ -85,7 +85,7 @@ main {
 /* Define pictures for each work square */
 
 .workSquare.square13 {
-    background-image: url(resources/lsbthroat.jpg);
+    background-image: url(resources/resources/LSTBThroat.jpg);
     background-position: 65%;
     background-size: cover;
 }
